@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- stylesheets -->
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kVo/Eh0sv7ZdiwZK32nRsp1FrDT3sLRLx3zVpSSTI9UdO5H02LJNLBg5F1gwvKg0" crossorigin="anonymous">
+
+    <title>Mad Libs</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- start form -->
+      <div id="questions">
+        <h1>Fill em out!</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group">
+            <label for="person">Your Name</label>
+            <input id="person" class="form-control person" type="text" placeholder="Tommy">
+          </div>
+          <div class="form-group">
+            <label for="adjective">Adjective</label>
+            <input id="adjective" class="form-control adjective" type="text" placeholder="Great">
+          </div>
+          <div class="form-group">
+            <label for="noun">Place</label>
+            <input id="noun" class="form-control noun" type="text" placeholder="America">
+          </div>
+          <div class="form-group">
+            <label for="insect">An insect, plural</label>
+            <input id="insect" class="form-control insect" type="text" placeholder="Spider">
+          </div>
+          <div class="form-group">
+            <label for="noun2">Super power</label>
+            <input id="noun2" class="form-control plural-noun" type="text" placeholder="shoot webs">
+          </div>
+          <div class="form-group">
+            <label for="verb">Partner</label>
+            <input id="verb" class="form-control verb" type="text" placeholder="sidekick">
+          </div>
+          <div>
+          </div>
+        </form>
+        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+        <hr>
+      </div>
+      <!-- end form -->
+
+      <!-- start story -->
+      <div id="story">
+        <h1>Mad with the Libs</h1>
+        <hr>
+        <h3>Do you know <span class="person"></span>? He's so <span class="adjective"></span>! He has been to <span class="noun"></span>, and when a <span class="insect"></span> bit him, he could <span class="noun2"></span>! I want to be his <span class="verb"></span>, and fight crime with him. But I think he's got another canidate. What should I do?</h3>
+        <div>
+          <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Play Again?</button>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
